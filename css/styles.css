@@ -43,10 +43,8 @@ nav {
 .logo {
   font-weight: 800;
   font-size: 1.5rem;
-  /* Use rgba to add 80% transparency to your cyan color */
   color: rgba(56, 189, 248, 0.8); 
   letter-spacing: -1px;
-  /* Optional: adds a very soft glow instead of a sharp edge */
   text-shadow: 0 0 15px rgba(56, 189, 248, 0.2); 
 }
 
