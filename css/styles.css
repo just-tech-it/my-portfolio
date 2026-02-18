@@ -43,9 +43,11 @@ nav {
 .logo {
   font-weight: 800;
   font-size: 1.5rem;
-  color: var(--accent);
-  opacity: 0.8;
+  /* Use rgba to add 80% transparency to your cyan color */
+  color: rgba(56, 189, 248, 0.8); 
   letter-spacing: -1px;
+  /* Optional: adds a very soft glow instead of a sharp edge */
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.2); 
 }
 
 nav ul {
@@ -98,6 +100,21 @@ section{
   flex-direction: column;
   justify-content: center;
   gap: 1.2rem;
+}
+
+#hero a {
+  display: inline-block; /* Essential to make padding/borders work */
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+#hero a:hover {
+  background: var(--accent);
+  color: var(--bg-color);
 }
 
 #hero h1{
